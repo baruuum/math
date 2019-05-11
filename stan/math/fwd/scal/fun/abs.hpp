@@ -3,10 +3,10 @@
 
 #include <stan/math/fwd/core.hpp>
 #include <stan/math/fwd/scal/fun/value_of.hpp>
-#include <stan/math/prim/scal/fun/constants.hpp>
-#include <stan/math/prim/scal/fun/abs.hpp>
-#include <stan/math/prim/scal/fun/value_of.hpp>
-#include <stan/math/prim/scal/meta/likely.hpp>
+#include <stan/math/prim/fun/constants.hpp>
+#include <stan/math/prim/fun/abs.hpp>
+#include <stan/math/prim/fun/value_of.hpp>
+#include <stan/math/prim/meta/likely.hpp>
 
 namespace stan {
 namespace math {

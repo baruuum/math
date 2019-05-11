@@ -2,8 +2,8 @@
 #define STAN_MATH_FWD_SCAL_FUN_GAMMA_Q_HPP
 
 #include <stan/math/fwd/core.hpp>
-#include <stan/math/prim/scal/fun/tgamma.hpp>
-#include <stan/math/prim/scal/fun/gamma_q.hpp>
+#include <stan/math/prim/fun/tgamma.hpp>
+#include <stan/math/prim/fun/gamma_q.hpp>
 
 namespace stan {
 namespace math {

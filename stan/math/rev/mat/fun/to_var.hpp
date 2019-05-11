@@ -1,8 +1,8 @@
 #ifndef STAN_MATH_REV_MAT_FUN_TO_VAR_HPP
 #define STAN_MATH_REV_MAT_FUN_TO_VAR_HPP
 
-#include <stan/math/prim/mat/fun/Eigen.hpp>
-#include <stan/math/prim/mat/fun/typedefs.hpp>
+#include <stan/math/prim/fun/Eigen.hpp>
+#include <stan/math/prim/fun/typedefs.hpp>
 #include <stan/math/rev/core.hpp>
 #include <stan/math/rev/mat/fun/typedefs.hpp>
 #include <stan/math/rev/scal/fun/to_var.hpp>

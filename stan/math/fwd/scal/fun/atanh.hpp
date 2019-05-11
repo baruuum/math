@@ -2,8 +2,8 @@
 #define STAN_MATH_FWD_SCAL_FUN_ATANH_HPP
 
 #include <stan/math/fwd/core.hpp>
-#include <stan/math/prim/scal/fun/atanh.hpp>
-#include <stan/math/prim/scal/fun/square.hpp>
+#include <stan/math/prim/fun/atanh.hpp>
+#include <stan/math/prim/fun/square.hpp>
 
 namespace stan {
 namespace math {

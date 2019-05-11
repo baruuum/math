@@ -2,7 +2,7 @@
 #define STAN_MATH_FWD_SCAL_FUN_LOG10_HPP
 
 #include <stan/math/fwd/core.hpp>
-#include <stan/math/prim/scal/fun/constants.hpp>
+#include <stan/math/prim/fun/constants.hpp>
 
 namespace stan {
 namespace math {

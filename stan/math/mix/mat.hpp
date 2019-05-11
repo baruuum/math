@@ -7,7 +7,7 @@
 
 #include <stan/math/fwd/mat.hpp>
 
-#include <stan/math/prim/mat.hpp>
+#include <stan/math/prim.hpp>
 
 #include <stan/math/mix/mat/functor/derivative.hpp>
 #include <stan/math/mix/mat/functor/finite_diff_grad_hessian.hpp>

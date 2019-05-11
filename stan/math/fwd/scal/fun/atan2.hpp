@@ -2,7 +2,7 @@
 #define STAN_MATH_FWD_SCAL_FUN_ATAN2_HPP
 
 #include <stan/math/fwd/core.hpp>
-#include <stan/math/prim/scal/fun/square.hpp>
+#include <stan/math/prim/fun/square.hpp>
 #include <cmath>
 
 namespace stan {

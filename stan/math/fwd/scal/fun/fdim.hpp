@@ -2,7 +2,7 @@
 #define STAN_MATH_FWD_SCAL_FUN_FDIM_HPP
 
 #include <stan/math/fwd/core.hpp>
-#include <stan/math/prim/scal/fun/fdim.hpp>
+#include <stan/math/prim/fun/fdim.hpp>
 
 namespace stan {
 namespace math {

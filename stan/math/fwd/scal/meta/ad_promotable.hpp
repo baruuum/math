@@ -1,7 +1,7 @@
 #ifndef STAN_MATH_FWD_SCAL_META_AD_PROMOTABLE_HPP
 #define STAN_MATH_FWD_SCAL_META_AD_PROMOTABLE_HPP
 
-#include <stan/math/prim/scal/meta/ad_promotable.hpp>
+#include <stan/math/prim/meta/ad_promotable.hpp>
 
 namespace stan {
 namespace math {

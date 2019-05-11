@@ -2,7 +2,7 @@
 #define STAN_MATH_FWD_SCAL_FUN_PHI_APPROX_HPP
 
 #include <stan/math/fwd/core.hpp>
-#include <stan/math/prim/scal/fun/inv_logit.hpp>
+#include <stan/math/prim/fun/inv_logit.hpp>
 #include <cmath>
 
 namespace stan {

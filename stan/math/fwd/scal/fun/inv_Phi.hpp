@@ -3,9 +3,9 @@
 
 #include <stan/math/fwd/core.hpp>
 
-#include <stan/math/prim/scal/fun/inv_Phi.hpp>
-#include <stan/math/prim/scal/fun/constants.hpp>
-#include <stan/math/prim/scal/fun/square.hpp>
+#include <stan/math/prim/fun/inv_Phi.hpp>
+#include <stan/math/prim/fun/constants.hpp>
+#include <stan/math/prim/fun/square.hpp>
 
 namespace stan {
 namespace math {

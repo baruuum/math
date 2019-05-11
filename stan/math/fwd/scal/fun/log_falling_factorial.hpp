@@ -3,7 +3,7 @@
 
 #include <stan/math/fwd/core.hpp>
 
-#include <stan/math/prim/scal/fun/log_falling_factorial.hpp>
+#include <stan/math/prim/fun/log_falling_factorial.hpp>
 #include <boost/math/special_functions/digamma.hpp>
 
 namespace stan {

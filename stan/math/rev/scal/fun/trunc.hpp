@@ -2,8 +2,8 @@
 #define STAN_MATH_REV_SCAL_FUN_TRUNC_HPP
 
 #include <stan/math/rev/core.hpp>
-#include <stan/math/prim/scal/fun/is_nan.hpp>
-#include <stan/math/prim/scal/fun/trunc.hpp>
+#include <stan/math/prim/fun/is_nan.hpp>
+#include <stan/math/prim/fun/trunc.hpp>
 #include <limits>
 
 namespace stan {

@@ -2,9 +2,9 @@
 #define STAN_MATH_REV_SCAL_FUN_GRAD_INC_BETA_HPP
 
 #include <stan/math/rev/core.hpp>
-#include <stan/math/prim/scal/fun/lbeta.hpp>
-#include <stan/math/prim/scal/fun/grad_2F1.hpp>
-#include <stan/math/prim/scal/fun/value_of.hpp>
+#include <stan/math/prim/fun/lbeta.hpp>
+#include <stan/math/prim/fun/grad_2F1.hpp>
+#include <stan/math/prim/fun/value_of.hpp>
 #include <stan/math/rev/scal/fun/exp.hpp>
 #include <stan/math/rev/scal/fun/fabs.hpp>
 #include <stan/math/rev/scal/fun/floor.hpp>

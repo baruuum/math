@@ -7,10 +7,10 @@
 #include <stan/math/fwd/scal/fun/lbeta.hpp>
 #include <stan/math/fwd/scal/fun/exp.hpp>
 #include <stan/math/fwd/scal/fun/value_of.hpp>
-#include <stan/math/prim/scal/fun/value_of.hpp>
+#include <stan/math/prim/fun/value_of.hpp>
 #include <stan/math/fwd/core.hpp>
 #include <stan/math/fwd/scal/fun/inc_beta.hpp>
-#include <stan/math/prim/scal/fun/grad_2F1.hpp>
+#include <stan/math/prim/fun/grad_2F1.hpp>
 #include <cmath>
 
 namespace stan {

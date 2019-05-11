@@ -2,8 +2,8 @@
 #define STAN_MATH_REV_SCAL_FUN_LOG_RISING_FACTORIAL_HPP
 
 #include <stan/math/rev/core.hpp>
-#include <stan/math/prim/scal/fun/log_rising_factorial.hpp>
-#include <stan/math/prim/scal/fun/digamma.hpp>
+#include <stan/math/prim/fun/log_rising_factorial.hpp>
+#include <stan/math/prim/fun/digamma.hpp>
 #include <stan/math/rev/scal/fun/digamma.hpp>
 
 namespace stan {

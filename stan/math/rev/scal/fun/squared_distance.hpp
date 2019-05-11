@@ -2,7 +2,7 @@
 #define STAN_MATH_REV_SCAL_FUN_SQUARED_DISTANCE_HPP
 
 #include <stan/math/rev/core.hpp>
-#include <stan/math/prim/scal/fun/squared_distance.hpp>
+#include <stan/math/prim/fun/squared_distance.hpp>
 
 namespace stan {
 namespace math {

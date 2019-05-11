@@ -1,9 +1,9 @@
 #ifndef STAN_MATH_REV_MAT_FUN_DOT_SELF_HPP
 #define STAN_MATH_REV_MAT_FUN_DOT_SELF_HPP
 
-#include <stan/math/prim/mat/fun/Eigen.hpp>
-#include <stan/math/prim/mat/fun/typedefs.hpp>
-#include <stan/math/prim/mat/err/check_vector.hpp>
+#include <stan/math/prim/fun/Eigen.hpp>
+#include <stan/math/prim/fun/typedefs.hpp>
+#include <stan/math/prim/err/check_vector.hpp>
 #include <stan/math/rev/core.hpp>
 #include <stan/math/rev/mat/fun/typedefs.hpp>
 #include <vector>

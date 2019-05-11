@@ -2,8 +2,8 @@
 #define STAN_MATH_FWD_SCAL_FUN_LOG2_HPP
 
 #include <stan/math/fwd/core.hpp>
-#include <stan/math/prim/scal/fun/constants.hpp>
-#include <stan/math/prim/scal/fun/log2.hpp>
+#include <stan/math/prim/fun/constants.hpp>
+#include <stan/math/prim/fun/log2.hpp>
 
 namespace stan {
 namespace math {

@@ -2,7 +2,7 @@
 #define STAN_MATH_FWD_SCAL_META_PARTIALS_TYPE_HPP
 
 #include <stan/math/fwd/core.hpp>
-#include <stan/math/prim/scal/meta/partials_type.hpp>
+#include <stan/math/prim/meta/partials_type.hpp>
 
 namespace stan {
 

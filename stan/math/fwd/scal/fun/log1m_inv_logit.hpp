@@ -2,7 +2,7 @@
 #define STAN_MATH_FWD_SCAL_FUN_LOG1M_INV_LOGIT_HPP
 
 #include <stan/math/fwd/core.hpp>
-#include <stan/math/prim/scal/fun/log1m_inv_logit.hpp>
+#include <stan/math/prim/fun/log1m_inv_logit.hpp>
 #include <cmath>
 
 namespace stan {

@@ -2,14 +2,14 @@
 #define STAN_MATH_REV_MAT_FUNCTOR_ALGEBRA_SOLVER_HPP
 
 #include <stan/math/rev/mat/functor/algebra_system.hpp>
-#include <stan/math/prim/mat/fun/mdivide_left.hpp>
+#include <stan/math/prim/fun/mdivide_left.hpp>
 #include <stan/math/rev/core.hpp>
 #include <stan/math/rev/scal/meta/is_var.hpp>
-#include <stan/math/prim/mat/fun/value_of.hpp>
-#include <stan/math/prim/scal/err/check_finite.hpp>
-#include <stan/math/prim/scal/err/check_consistent_size.hpp>
-#include <stan/math/prim/arr/err/check_matching_sizes.hpp>
-#include <stan/math/prim/arr/err/check_nonzero_size.hpp>
+#include <stan/math/prim/fun/value_of.hpp>
+#include <stan/math/prim/err/check_finite.hpp>
+#include <stan/math/prim/err/check_consistent_size.hpp>
+#include <stan/math/prim/err/check_matching_sizes.hpp>
+#include <stan/math/prim/err/check_nonzero_size.hpp>
 #include <unsupported/Eigen/NonLinearOptimization>
 #include <iostream>
 #include <string>

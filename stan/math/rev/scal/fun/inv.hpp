@@ -2,7 +2,7 @@
 #define STAN_MATH_REV_SCAL_FUN_INV_HPP
 
 #include <stan/math/rev/core.hpp>
-#include <stan/math/prim/scal/fun/inv.hpp>
+#include <stan/math/prim/fun/inv.hpp>
 #include <valarray>
 
 namespace stan {

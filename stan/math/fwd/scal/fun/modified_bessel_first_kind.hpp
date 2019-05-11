@@ -2,7 +2,7 @@
 #define STAN_MATH_FWD_SCAL_FUN_MODIFIED_BESSEL_FIRST_KIND_HPP
 
 #include <stan/math/fwd/core.hpp>
-#include <stan/math/prim/scal/fun/modified_bessel_first_kind.hpp>
+#include <stan/math/prim/fun/modified_bessel_first_kind.hpp>
 
 namespace stan {
 namespace math {

@@ -2,7 +2,7 @@
 #define STAN_MATH_FWD_SCAL_FUN_TGAMMA_HPP
 
 #include <stan/math/fwd/core.hpp>
-#include <stan/math/prim/scal/fun/tgamma.hpp>
+#include <stan/math/prim/fun/tgamma.hpp>
 #include <boost/math/special_functions/digamma.hpp>
 
 namespace stan {

@@ -3,7 +3,7 @@
 
 #include <stan/math/fwd/mat/fun/typedefs.hpp>
 #include <stan/math/fwd/scal/meta/operands_and_partials.hpp>
-#include <stan/math/prim/scal/meta/broadcast_array.hpp>
+#include <stan/math/prim/meta/broadcast_array.hpp>
 #include <vector>
 
 namespace stan {

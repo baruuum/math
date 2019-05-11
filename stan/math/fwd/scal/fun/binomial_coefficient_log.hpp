@@ -4,7 +4,7 @@
 #include <stan/math/fwd/core.hpp>
 
 #include <boost/math/special_functions/digamma.hpp>
-#include <stan/math/prim/scal/fun/binomial_coefficient_log.hpp>
+#include <stan/math/prim/fun/binomial_coefficient_log.hpp>
 
 namespace stan {
 namespace math {

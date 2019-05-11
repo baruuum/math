@@ -2,7 +2,7 @@
 #define STAN_MATH_REV_SCAL_FUN_INV_LOGIT_HPP
 
 #include <stan/math/rev/core.hpp>
-#include <stan/math/prim/scal/fun/inv_logit.hpp>
+#include <stan/math/prim/fun/inv_logit.hpp>
 
 namespace stan {
 namespace math {

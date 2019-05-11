@@ -2,7 +2,7 @@
 #define STAN_MATH_FWD_SCAL_FUN_PRIMITIVE_VALUE_HPP
 
 #include <stan/math/fwd/core.hpp>
-#include <stan/math/prim/scal/fun/primitive_value.hpp>
+#include <stan/math/prim/fun/primitive_value.hpp>
 
 namespace stan {
 namespace math {

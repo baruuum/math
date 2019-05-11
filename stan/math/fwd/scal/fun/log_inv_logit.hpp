@@ -3,7 +3,7 @@
 
 #include <stan/math/fwd/core.hpp>
 
-#include <stan/math/prim/scal/fun/log_inv_logit.hpp>
+#include <stan/math/prim/fun/log_inv_logit.hpp>
 
 namespace stan {
 namespace math {

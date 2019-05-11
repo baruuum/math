@@ -2,10 +2,10 @@
 #define STAN_MATH_FWD_SCAL_FUN_FABS_HPP
 
 #include <stan/math/fwd/core.hpp>
-#include <stan/math/prim/scal/fun/constants.hpp>
-#include <stan/math/prim/scal/fun/is_nan.hpp>
-#include <stan/math/prim/scal/fun/value_of.hpp>
-#include <stan/math/prim/scal/meta/likely.hpp>
+#include <stan/math/prim/fun/constants.hpp>
+#include <stan/math/prim/fun/is_nan.hpp>
+#include <stan/math/prim/fun/value_of.hpp>
+#include <stan/math/prim/meta/likely.hpp>
 #include <cmath>
 
 namespace stan {

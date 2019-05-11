@@ -2,8 +2,8 @@
 #define STAN_MATH_FWD_SCAL_FUN_ROUND_HPP
 
 #include <stan/math/fwd/core.hpp>
-#include <stan/math/prim/scal/fun/is_nan.hpp>
-#include <stan/math/prim/scal/fun/round.hpp>
+#include <stan/math/prim/fun/is_nan.hpp>
+#include <stan/math/prim/fun/round.hpp>
 #include <limits>
 
 namespace stan {

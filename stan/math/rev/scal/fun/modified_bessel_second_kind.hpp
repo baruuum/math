@@ -2,7 +2,7 @@
 #define STAN_MATH_REV_SCAL_FUN_MODIFIED_BESSEL_SECOND_KIND_HPP
 
 #include <stan/math/rev/core.hpp>
-#include <stan/math/prim/scal/fun/modified_bessel_second_kind.hpp>
+#include <stan/math/prim/fun/modified_bessel_second_kind.hpp>
 
 namespace stan {
 namespace math {

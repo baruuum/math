@@ -7,7 +7,7 @@
 #include <stan/math/rev/scal/meta/partials_type.hpp>
 #include <stan/math/rev/scal/meta/operands_and_partials.hpp>
 
-#include <stan/math/prim/scal.hpp>
+#include <stan/math/prim.hpp>
 
 #include <stan/math/rev/scal/fun/abs.hpp>
 #include <stan/math/rev/scal/fun/acos.hpp>

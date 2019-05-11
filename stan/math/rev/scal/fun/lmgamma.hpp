@@ -2,9 +2,9 @@
 #define STAN_MATH_REV_SCAL_FUN_LMGAMMA_HPP
 
 #include <stan/math/rev/core.hpp>
-#include <stan/math/prim/scal/fun/constants.hpp>
-#include <stan/math/prim/scal/fun/lmgamma.hpp>
-#include <stan/math/prim/scal/fun/digamma.hpp>
+#include <stan/math/prim/fun/constants.hpp>
+#include <stan/math/prim/fun/lmgamma.hpp>
+#include <stan/math/prim/fun/digamma.hpp>
 #include <valarray>
 
 namespace stan {

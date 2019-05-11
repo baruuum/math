@@ -2,8 +2,8 @@
 #define STAN_MATH_FWD_SCAL_FUN_LGAMMA_HPP
 
 #include <stan/math/fwd/core.hpp>
-#include <stan/math/prim/scal/fun/digamma.hpp>
-#include <stan/math/prim/scal/fun/lgamma.hpp>
+#include <stan/math/prim/fun/digamma.hpp>
+#include <stan/math/prim/fun/lgamma.hpp>
 
 namespace stan {
 namespace math {

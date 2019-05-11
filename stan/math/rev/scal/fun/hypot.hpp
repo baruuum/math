@@ -2,7 +2,7 @@
 #define STAN_MATH_REV_SCAL_FUN_HYPOT_HPP
 
 #include <stan/math/rev/core.hpp>
-#include <stan/math/prim/scal/fun/hypot.hpp>
+#include <stan/math/prim/fun/hypot.hpp>
 
 namespace stan {
 namespace math {
