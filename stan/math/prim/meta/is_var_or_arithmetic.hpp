@@ -10,7 +10,7 @@ namespace stan {
 
 /**
  * Defines a public enum named value which is defined to be true (1)
- * if the type is either var or an aritmetic type
+ * if the type is either var or an arithmetic type
  * and false (0) otherwise.
  */
 template <typename T>
