@@ -1,11 +1,12 @@
 #ifndef STAN_MATH_PRIM_FUN_PHI_HPP
 #define STAN_MATH_PRIM_FUN_PHI_HPP
 
+#include <stan/math/prim/vectorize/apply_scalar_unary.hpp>
 #include <stan/math/prim/fun/erf.hpp>
 #include <stan/math/prim/fun/erfc.hpp>
 #include <stan/math/prim/fun/constants.hpp>
 #include <stan/math/prim/err/check_not_nan.hpp>
-#include <stan/math/prim/vectorize/apply_scalar_unary.hpp>
+#include <stan/math/prim/fun/Eigen.hpp>
 
 namespace stan {
 namespace math {
