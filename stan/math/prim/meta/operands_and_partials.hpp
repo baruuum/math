@@ -1,14 +1,16 @@
-#ifndef STAN_MATH_PRIM_META_OPERANDS_AND_PARTIALS_HPP
-#define STAN_MATH_PRIM_META_OPERANDS_AND_PARTIALS_HPP
-
+#ifndef STAN_MATH_PRIM_SCAL_META_OPERANDS_AND_PARTIALS_HPP
+#define STAN_MATH_PRIM_SCAL_META_OPERANDS_AND_PARTIALS_HPP
 #include <stan/math/prim/meta/broadcast_array.hpp>
 #include <stan/math/prim/meta/return_type.hpp>
-
+#include <stan/math/prim/meta/broadcast_array.hpp>
+#include <stan/math/prim/meta/operands_and_partials.hpp>
+#include <stan/math/prim/meta/return_type.hpp>
 #include <Eigen/Dense>
 #include <vector>
-
-namespace stan {
 namespace math {
+namespace stan {
+
+
 template <typename Op1 = double, typename Op2 = double, typename Op3 = double,
           typename Op4 = double, typename Op5 = double,
           typename T_return_type =
@@ -52,7 +54,6 @@ class ops_partials_edge {
   ViewElt dx() const { return 0; }                      // used for fvars
   int size() const { return 0; }                        // reverse mode
 };
-}  // namespace internal
 
 /**
  * This template builds partial derivatives with respect to a
@@ -125,6 +126,8 @@ class operands_and_partials {
   internal::ops_partials_edge<double, Op5> edge5_;
 };
 
+
+
 namespace internal {
 
 /* This class will be used for both multivariate (nested container)
@@ -188,6 +191,4 @@ class ops_partials_edge<ViewElt, std::vector<std::vector<Op>>> {
   int size() const { return 0; }
 };
 }  // namespace internal
-}  // namespace math
-}  // namespace stan
 #endif

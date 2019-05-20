@@ -1,12 +1,14 @@
-
-#ifndef STAN_MATH_PRIM_META_LENGTH_MVT_HPP
-#define STAN_MATH_PRIM_META_LENGTH_MVT_HPP
+#ifndef STAN_MATH_PRIM_SCAL_META_LENGTH_MVT_HPP
+#define STAN_MATH_PRIM_SCAL_META_LENGTH_MVT_HPP
 #include <stdexcept>
-
+#include <stan/math/prim/meta/length_mvt.hpp>
 #include <stan/math/prim/fun/Eigen.hpp>
+#include <stdexcept>
 #include <vector>
-
 namespace stan {
+
+
+
 
 /**
  * length_mvt provides the length of a multivariate argument.
@@ -25,9 +27,8 @@ size_t length_mvt(const T& /* unused */) {
   return 1U;
 }
 
-}  // namespace stan
 
-namespace stan {
+
 
 template <typename T, int R, int C>
 size_t length_mvt(const Eigen::Matrix<T, R, C>& /* unused */) {
@@ -39,5 +40,4 @@ size_t length_mvt(const std::vector<Eigen::Matrix<T, R, C> >& x) {
   return x.size();
 }
 
-}  // namespace stan
 #endif

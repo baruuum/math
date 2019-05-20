@@ -1,12 +1,13 @@
-#ifndef STAN_MATH_PRIM_META_BROADCAST_ARRAY_HPP
-#define STAN_MATH_PRIM_META_BROADCAST_ARRAY_HPP
-
+#ifndef STAN_MATH_PRIM_SCAL_META_BROADCAST_ARRAY_HPP
+#ifndef STAN_MATH_PRIM_MAT_META_BROADCAST_ARRAY_HPP
+#define STAN_MATH_PRIM_SCAL_META_BROADCAST_ARRAY_HPP
+#define STAN_MATH_PRIM_MAT_META_BROADCAST_ARRAY_HPP
 #include <stdexcept>
-
-#include <Eigen/Dense>
-
-namespace stan {
+#include <stdexcept>
 namespace math {
+namespace stan {
+
+
 namespace internal {
 template <typename T>
 class broadcast_array {
@@ -45,7 +46,8 @@ class empty_broadcast_array {
   template <typename Y>
   void operator=(const Y& /*A*/);
 };
-}  // namespace internal
+
+
 
 namespace internal {
 template <typename ViewElt, typename OpElt, int R, int C>
@@ -82,6 +84,4 @@ class empty_broadcast_array<ViewElt, Eigen::Matrix<OpElt, R, C> > {
   Eigen::Matrix<ViewElt, R, 1>& col(int /*i*/);
 };
 }  // namespace internal
-}  // namespace math
-}  // namespace stan
 #endif

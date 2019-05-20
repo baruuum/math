@@ -1,5 +1,5 @@
-#ifndef STAN_MATH_PRIM_META_IS_VAR_OR_ARITHMETIC_HPP
-#define STAN_MATH_PRIM_META_IS_VAR_OR_ARITHMETIC_HPP
+#ifndef STAN_MATH_PRIM_SCAL_META_IS_VAR_OR_ARITHMETIC_HPP
+#define STAN_MATH_PRIM_SCAL_META_IS_VAR_OR_ARITHMETIC_HPP
 
 #include <stan/math/prim/meta/is_var.hpp>
 #include <stan/math/prim/meta/scalar_type.hpp>
@@ -10,7 +10,7 @@ namespace stan {
 
 /**
  * Defines a public enum named value which is defined to be true (1)
- * if the type is either var or an arithmetic type
+ * if the type is either var or an aritmetic type
  * and false (0) otherwise.
  */
 template <typename T>

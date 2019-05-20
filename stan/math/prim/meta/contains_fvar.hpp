@@ -1,5 +1,5 @@
-#ifndef STAN_MATH_PRIM_META_CONTAINS_FVAR_HPP
-#define STAN_MATH_PRIM_META_CONTAINS_FVAR_HPP
+#ifndef STAN_MATH_PRIM_SCAL_META_CONTAINS_FVAR_HPP
+#define STAN_MATH_PRIM_SCAL_META_CONTAINS_FVAR_HPP
 
 #include <stan/math/prim/meta/is_fvar.hpp>
 #include <stan/math/prim/meta/scalar_type.hpp>
@@ -8,9 +8,10 @@
 namespace stan {
 
 /**
- * Defines a public enum named value which is defined to be true (1)
- * if any of the template parameters includes a fvar as their base scalar and
- * false (0) otherwise.
+ * Extends std::true_type when instantiated with at least 1
+ * template parameter that is a fvar. Extends std::false_type
+ * otherwise.
+ * @tparam T Types to test
  */
 template <typename... T>
 using contains_fvar

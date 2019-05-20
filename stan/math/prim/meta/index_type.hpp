@@ -1,12 +1,10 @@
-#ifndef STAN_MATH_PRIM_META_INDEX_TYPE_HPP
-#define STAN_MATH_PRIM_META_INDEX_TYPE_HPP
-
-#include <vector>
-
+#ifndef STAN_MATH_PRIM_SCAL_META_INDEX_TYPE_HPP
+#define STAN_MATH_PRIM_SCAL_META_INDEX_TYPE_HPP
+#include <stan/math/prim/meta/index_type.hpp>
 #include <Eigen/Core>
-
-namespace stan {
 namespace math {
+namespace stan {
+
 
 /**
  * Primary template class for the metaprogram to compute the index
@@ -32,19 +30,9 @@ struct index_type<const T> {
   typedef typename index_type<T>::type type;
 };
 
-/**
- * Template metaprogram class to compute the type of index for a
- * standard vector.
- *
- * @tparam T type of elements in standard vector.
- */
-template <typename T>
-struct index_type<std::vector<T> > {
-  /**
-   * Typedef for index of standard vectors.
-   */
-  typedef typename std::vector<T>::size_type type;
-};
+
+
+
 
 /**
  * Template metaprogram defining typedef for the type of index for
@@ -59,8 +47,6 @@ struct index_type<Eigen::Matrix<T, R, C> > {
   typedef typename Eigen::Matrix<T, R, C>::Index type;
 };
 
-}  // namespace math
 
-}  // namespace stan
 
 #endif
