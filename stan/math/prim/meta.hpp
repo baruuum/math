@@ -24,4 +24,32 @@
 #include <stan/math/prim/meta/value_type.hpp>
 #include <stan/math/prim/meta/vector_seq_view.hpp>
 
+#include <stan/math/prim/meta/contains_std_vector.hpp>
+#include <stan/math/prim/meta/VectorBuilderHelper.hpp>
+
+#include <stan/math/prim/meta/ad_promotable.hpp>
+#include <stan/math/prim/meta/child_type.hpp>
+#include <stan/math/prim/meta/contains_fvar.hpp>
+#include <stan/math/prim/meta/contains_nonconstant_struct.hpp>
+#include <stan/math/prim/meta/contains_std_vector.hpp>
+#include <stan/math/prim/meta/contains_vector.hpp>
+#include <stan/math/prim/meta/error_index.hpp>
+#include <stan/math/prim/meta/include_summand.hpp>
+#include <stan/math/prim/meta/is_nonconstant_struct.hpp>
+#include <stan/math/prim/meta/is_fvar.hpp>
+#include <stan/math/prim/meta/is_var.hpp>
+#include <stan/math/prim/meta/is_var_or_arithmetic.hpp>
+#include <stan/math/prim/meta/likely.hpp>
+#include <stan/math/prim/meta/max_size.hpp>
+#include <stan/math/prim/meta/max_size_mvt.hpp>
+#include <stan/math/prim/meta/operands_and_partials.hpp>
+#include <stan/math/prim/meta/partials_return_type.hpp>
+#include <stan/math/prim/meta/partials_type.hpp>
+#include <stan/math/prim/meta/return_type.hpp>
+#include <stan/math/prim/meta/scalar_seq_view.hpp>
+#include <stan/math/prim/meta/scalar_type_pre.hpp>
+#include <stan/math/prim/meta/size_of.hpp>
+#include <stan/math/prim/meta/StdVectorBuilder.hpp>
+#include <stan/math/prim/meta/VectorBuilder.hpp>
+
 #endif
