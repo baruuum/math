@@ -12,6 +12,7 @@
 #include <stan/math/prim/meta/broadcast_array.hpp>
 #include <stan/math/prim/meta/get.hpp>
 #include <stan/math/prim/meta/index_type.hpp>
+#include <stan/math/prim/meta/is_constant.hpp>
 #include <stan/math/prim/meta/is_constant_struct.hpp>
 #include <stan/math/prim/meta/is_vector.hpp>
 #include <stan/math/prim/meta/is_vector_like.hpp>
