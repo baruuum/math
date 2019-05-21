@@ -1,8 +1,8 @@
 #ifndef STAN_MATH_PRIM_META_IS_VECTOR_LIKE_HPP
 #define STAN_MATH_PRIM_META_IS_VECTOR_LIKE_HPP
-
-#include <stan/math/prim/meta.hpp>
 #include <stan/math/prim.hpp>
+#include <stan/math/prim/meta.hpp>
+
 
 namespace stan {
 
@@ -22,7 +22,7 @@ namespace stan {
  */
 template <typename T>
 struct is_vector_like {
-  enum { value = stan::is_vector<T>::value };
+  enum { value = is_vector<T>::value };
 };
 
 /**
@@ -54,7 +54,7 @@ struct is_vector_like<T*> {
  */
 template <typename T>
 struct is_vector_like<const T> {
-  enum { value = stan::is_vector_like<T>::value };
+  enum { value = is_vector_like<T>::value };
 };
 
 
