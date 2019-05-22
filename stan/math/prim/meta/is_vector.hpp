@@ -1,7 +1,7 @@
-#ifndef STAN_MATH_PRIM_SCAL_META_IS_VECTOR_HPP
-#define STAN_MATH_PRIM_SCAL_META_IS_VECTOR_HPP
-#include <stan/math/prim/fun/Eigen.hpp>
-#include <stan/math/prim/meta/is_vector.hpp>
+#ifndef STAN_MATH_PRIM_META_IS_VECTOR_HPP
+#define STAN_MATH_PRIM_META_IS_VECTOR_HPP
+#include <stan/math/prim.hpp>
+#include <stan/math/prim/meta.hpp>
 namespace stan {
 
 
@@ -34,4 +34,22 @@ struct is_vector<Eigen::Block<T> > {
   enum { value = 1 };
   typedef T type;
 };
+}
+
+
+
+// FIXME: use boost::type_traits::remove_all_extents to
+//   extend to array/ptr types
+
+template <typename T>
+struct is_vector<const T> {
+  enum { value = is_vector<T>::value };
+  typedef T type;
+};
+template <typename T>
+struct is_vector<std::vector<T> > {
+  enum { value = 1 };
+  typedef T type;
+};
+}
 #endif

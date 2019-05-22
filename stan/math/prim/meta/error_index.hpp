@@ -1,5 +1,7 @@
-#ifndef STAN_MATH_PRIM_SCAL_META_ERROR_INDEX_HPP
-#define STAN_MATH_PRIM_SCAL_META_ERROR_INDEX_HPP
+#ifndef STAN_MATH_PRIM_META_ERROR_INDEX_HPP
+#define STAN_MATH_PRIM_META_ERROR_INDEX_HPP
+#include <stan/math/prim.hpp>
+#include <stan/math/prim/meta.hpp>
 
 namespace stan {
 

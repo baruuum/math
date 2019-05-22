@@ -1,5 +1,5 @@
-#ifndef STAN_MATH_PRIM_SCAL_META_IS_CONSTANT_STRUCT_HPP
-#define STAN_MATH_PRIM_SCAL_META_IS_CONSTANT_STRUCT_HPP
+#ifndef STAN_MATH_PRIM_META_IS_CONSTANT_STRUCT_HPP
+#define STAN_MATH_PRIM_META_IS_CONSTANT_STRUCT_HPP
 #include <stan/math/prim.hpp>
 #include <stan/math/prim/meta.hpp>
 namespace stan {
@@ -42,5 +42,19 @@ struct is_constant_struct<Eigen::Block<T> > {
   enum { value = is_constant_struct<T>::value };
 };
 
+}
+
+
+/**
+ * Defines a public enum named value and sets it to true(1)
+ * if the type of the elements in the provided std::vector
+ * is a constant struct, false(0) otherwise.
+ * @tparam type of the elements in the std::vector
+ */
+template <typename T>
+struct is_constant_struct<std::vector<T> > {
+  enum { value = is_constant_struct<T>::value };
 };
+
+}
 #endif

@@ -1,9 +1,8 @@
-#ifndef STAN_MATH_PRIM_SCAL_META_CONTAINS_NONCONSTANT_STRUCT_HPP
-#define STAN_MATH_PRIM_SCAL_META_CONTAINS_NONCONSTANT_STRUCT_HPP
+#ifndef STAN_MATH_PRIM_META_CONTAINS_NONCONSTANT_STRUCT_HPP
+#define STAN_MATH_PRIM_META_CONTAINS_NONCONSTANT_STRUCT_HPP
+#include <stan/math/prim.hpp>
+#include <stan/math/prim/meta.hpp>
 
-#include <stan/math/prim/meta/is_nonconstant_struct.hpp>
-#include <stan/math/prim/meta/disjunction.hpp>
-#include <type_traits>
 namespace stan {
 
 /**

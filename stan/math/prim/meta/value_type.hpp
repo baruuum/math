@@ -1,7 +1,7 @@
-#ifndef STAN_MATH_PRIM_SCAL_META_VALUE_TYPE_HPP
-#define STAN_MATH_PRIM_SCAL_META_VALUE_TYPE_HPP
-#include <stan/math/prim/meta/value_type.hpp>
-#include <Eigen/Core>
+#ifndef STAN_MATH_PRIM_META_VALUE_TYPE_HPP
+#define STAN_MATH_PRIM_META_VALUE_TYPE_HPP
+#include <stan/math/prim.hpp>
+#include <stan/math/prim/meta.hpp>
 namespace math {
 namespace stan {
 
@@ -48,4 +48,26 @@ struct value_type<Eigen::Matrix<T, R, C> > {
 
 
 
+}
+}
+
+
+
+/**
+ * Template metaprogram class to compute the type of values stored
+ * in a standard vector.
+ *
+ * @tparam T type of elements in standard vector.
+ */
+template <typename T>
+struct value_type<std::vector<T> > {
+  /**
+   * Type of value stored in a standard vector with type
+   * <code>T</code> entries.
+   */
+  typedef T type;
+};
+
+}
+}
 #endif

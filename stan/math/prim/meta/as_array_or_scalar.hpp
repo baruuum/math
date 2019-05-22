@@ -1,7 +1,7 @@
-#ifndef STAN_MATH_PRIM_SCAL_FUN_AS_ARRAY_OR_SCALAR_HPP
-#define STAN_MATH_PRIM_SCAL_FUN_AS_ARRAY_OR_SCALAR_HPP
-#include <Eigen/Dense>
-#include <vector>
+#ifndef STAN_MATH_PRIM_FUN_AS_ARRAY_OR_SCALAR_HPP
+#define STAN_MATH_PRIM_FUN_AS_ARRAY_OR_SCALAR_HPP
+#include <stan/math/prim.hpp>
+#include <stan/math/prim/meta.hpp>
 namespace math {
 namespace stan {
 
@@ -67,4 +67,6 @@ inline Eigen::Map<const Eigen::Array<T, Eigen::Dynamic, 1>> as_array_or_scalar(
 }
 
 
+}
+}
 #endif

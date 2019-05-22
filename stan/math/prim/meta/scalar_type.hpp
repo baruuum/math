@@ -1,8 +1,7 @@
-#ifndef STAN_MATH_PRIM_SCAL_META_SCALAR_TYPE_HPP
-#define STAN_MATH_PRIM_SCAL_META_SCALAR_TYPE_HPP
-#include <stan/math/prim/meta/value_type.hpp>
-#include <stan/math/prim/fun/Eigen.hpp>
-#include <stan/math/prim/meta/scalar_type.hpp>
+#ifndef STAN_MATH_PRIM_META_SCALAR_TYPE_HPP
+#define STAN_MATH_PRIM_META_SCALAR_TYPE_HPP
+#include <stan/math/prim.hpp>
+#include <stan/math/prim/meta.hpp>
 namespace stan {
 
 
@@ -88,4 +87,27 @@ template <typename T>
 struct scalar_type<Eigen::Block<T> > {
   typedef typename scalar_type<T>::type type;
 };
+}
+
+
+template <typename T>
+struct scalar_type<std::vector<T> > {
+  typedef typename scalar_type<T>::type type;
+};
+
+template <typename T>
+struct scalar_type<const std::vector<T> > {
+  typedef typename scalar_type<T>::type type;
+};
+
+template <typename T>
+struct scalar_type<std::vector<T>&> {
+  typedef typename scalar_type<T>::type type;
+};
+
+template <typename T>
+struct scalar_type<const std::vector<T>&> {
+  typedef typename scalar_type<T>::type type;
+};
+}
 #endif

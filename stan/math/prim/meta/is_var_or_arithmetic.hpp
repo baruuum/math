@@ -1,10 +1,8 @@
-#ifndef STAN_MATH_PRIM_SCAL_META_IS_VAR_OR_ARITHMETIC_HPP
-#define STAN_MATH_PRIM_SCAL_META_IS_VAR_OR_ARITHMETIC_HPP
+#ifndef STAN_MATH_PRIM_META_IS_VAR_OR_ARITHMETIC_HPP
+#define STAN_MATH_PRIM_META_IS_VAR_OR_ARITHMETIC_HPP
+#include <stan/math/prim.hpp>
+#include <stan/math/prim/meta.hpp>
 
-#include <stan/math/prim/meta/is_var.hpp>
-#include <stan/math/prim/meta/scalar_type.hpp>
-#include <stan/math/prim/meta/conjunction.hpp>
-#include <type_traits>
 
 namespace stan {
 

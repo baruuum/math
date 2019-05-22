@@ -1,12 +1,8 @@
-#ifndef STAN_MATH_PRIM_SCAL_META_OPERANDS_AND_PARTIALS_HPP
-#define STAN_MATH_PRIM_SCAL_META_OPERANDS_AND_PARTIALS_HPP
-#include <stan/math/prim/meta/broadcast_array.hpp>
-#include <stan/math/prim/meta/return_type.hpp>
-#include <stan/math/prim/meta/broadcast_array.hpp>
-#include <stan/math/prim/meta/operands_and_partials.hpp>
-#include <stan/math/prim/meta/return_type.hpp>
-#include <Eigen/Dense>
-#include <vector>
+#ifndef STAN_MATH_PRIM_META_OPERANDS_AND_PARTIALS_HPP
+#define STAN_MATH_PRIM_META_OPERANDS_AND_PARTIALS_HPP
+#include <stan/math/prim.hpp>
+#include <stan/math/prim/meta.hpp>
+namespace internal {
 namespace math {
 namespace stan {
 
@@ -17,7 +13,6 @@ template <typename Op1 = double, typename Op2 = double, typename Op3 = double,
               typename return_type<Op1, Op2, Op3, Op4, Op5>::type>
 class operands_and_partials;  // Forward declaration
 
-namespace internal {
 /**
  * An edge holds both the operands and its associated
  * partial derivatives. They're held together in the
@@ -128,7 +123,6 @@ class operands_and_partials {
 
 
 
-namespace internal {
 
 /* This class will be used for both multivariate (nested container)
    operands_and_partials edges as well as for the univariate case.
@@ -190,5 +184,7 @@ class ops_partials_edge<ViewElt, std::vector<std::vector<Op>>> {
   double dx() const { return 0; }                      // used for fvars
   int size() const { return 0; }
 };
-}  // namespace internal
+}
+}
+}
 #endif

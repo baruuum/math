@@ -1,7 +1,7 @@
-#ifndef STAN_MATH_PRIM_SCAL_FUN_AS_COLUMN_VECTOR_OR_SCALAR_HPP
-#define STAN_MATH_PRIM_SCAL_FUN_AS_COLUMN_VECTOR_OR_SCALAR_HPP
-#include <Eigen/Dense>
-#include <vector>
+#ifndef STAN_MATH_PRIM_FUN_AS_COLUMN_VECTOR_OR_SCALAR_HPP
+#define STAN_MATH_PRIM_FUN_AS_COLUMN_VECTOR_OR_SCALAR_HPP
+#include <stan/math/prim.hpp>
+#include <stan/math/prim/meta.hpp>
 namespace math {
 namespace stan {
 
@@ -69,4 +69,6 @@ as_column_vector_or_scalar(const std::vector<T>& a) {
 }
 
 
+}
+}
 #endif

@@ -1,8 +1,8 @@
-#ifndef STAN_MATH_PRIM_SCAL_META_SIZE_OF_HPP
-#define STAN_MATH_PRIM_SCAL_META_SIZE_OF_HPP
+#ifndef STAN_MATH_PRIM_META_SIZE_OF_HPP
+#define STAN_MATH_PRIM_META_SIZE_OF_HPP
+#include <stan/math/prim.hpp>
+#include <stan/math/prim/meta.hpp>
 
-#include <stan/math/prim/meta/is_vector.hpp>
-#include <cstddef>
 
 namespace stan {
 

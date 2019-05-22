@@ -2,8 +2,6 @@
 #define STAN_MATH_PRIM_META_IS_VECTOR_LIKE_HPP
 #include <stan/math/prim.hpp>
 #include <stan/math/prim/meta.hpp>
-
-
 namespace stan {
 
 
@@ -22,7 +20,7 @@ namespace stan {
  */
 template <typename T>
 struct is_vector_like {
-  enum { value = is_vector<T>::value };
+  enum { value = stan::is_vector<T>::value };
 };
 
 /**
@@ -54,7 +52,7 @@ struct is_vector_like<T*> {
  */
 template <typename T>
 struct is_vector_like<const T> {
-  enum { value = is_vector_like<T>::value };
+  enum { value = stan::is_vector_like<T>::value };
 };
 
 
@@ -92,5 +90,5 @@ template <typename T, int R, int C>
 struct is_vector_like<Eigen::Array<T, R, C> > {
   enum { value = true };
 };
-};
+}
 #endif

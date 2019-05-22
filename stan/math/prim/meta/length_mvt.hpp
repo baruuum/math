@@ -1,14 +1,7 @@
 #ifndef STAN_MATH_PRIM_META_LENGTH_MVT_HPP
 #define STAN_MATH_PRIM_META_LENGTH_MVT_HPP
-//#include <stdexcept>
-//#include <stan/math/prim/meta/length_mvt.hpp>
-
-//#include <stan/math/prim/fun/Eigen.hpp>
 #include <stan/math/prim.hpp>
 #include <stan/math/prim/meta.hpp>
-
-// #include <stdexcept>
-// #include <vector>
 namespace stan {
 
 
@@ -43,6 +36,6 @@ template <typename T, int R, int C>
 size_t length_mvt(const std::vector<Eigen::Matrix<T, R, C> >& x) {
   return x.size();
 }
-}
 
+}
 #endif

@@ -1,7 +1,8 @@
-#ifndef STAN_MATH_PRIM_SCAL_META_CONJUNCTION_HPP
-#define STAN_MATH_PRIM_SCAL_META_CONJUNCTION_HPP
+#ifndef STAN_MATH_PRIM_META_CONJUNCTION_HPP
+#define STAN_MATH_PRIM_META_CONJUNCTION_HPP
+#include <stan/math/prim.hpp>
+#include <stan/math/prim/meta.hpp>
 
-#include <type_traits>
 
 namespace stan {
 namespace math {
