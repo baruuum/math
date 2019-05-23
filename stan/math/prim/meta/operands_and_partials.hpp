@@ -2,7 +2,6 @@
 #define STAN_MATH_PRIM_META_OPERANDS_AND_PARTIALS_HPP
 #include <stan/math/prim.hpp>
 #include <stan/math/prim/meta.hpp>
-namespace internal {
 namespace math {
 namespace stan {
 
@@ -10,9 +9,9 @@ namespace stan {
 template <typename Op1 = double, typename Op2 = double, typename Op3 = double,
           typename Op4 = double, typename Op5 = double,
           typename T_return_type =
-          typename return_type<Op1, Op2, Op3, Op4, Op5>::type>
+          stan::return_type<Op1, Op2, Op3, Op4, Op5>::type>
 class operands_and_partials;  // Forward declaration
-
+namespace internal {
 /**
  * An edge holds both the operands and its associated
  * partial derivatives. They're held together in the
