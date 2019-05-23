@@ -1,9 +1,7 @@
 #ifndef STAN_MATH_PRIM_META_BROADCAST_ARRAY_HPP
-#ifndef STAN_MATH_PRIM_META_BROADCAST_ARRAY_HPP
+#define STAN_MATH_PRIM_META_BROADCAST_ARRAY_HPP
 #include <stan/math/prim.hpp>
 #include <stan/math/prim/meta.hpp>
-#define STAN_MATH_PRIM_META_BROADCAST_ARRAY_HPP
-#define STAN_MATH_PRIM_META_BROADCAST_ARRAY_HPP
 namespace internal {
 namespace math {
 namespace stan {
@@ -82,7 +80,7 @@ class empty_broadcast_array<ViewElt, Eigen::Matrix<OpElt, R, C> > {
    */
   Eigen::Matrix<ViewElt, R, 1>& col(int /*i*/);
 };
-}
-}
-}
+}  // namespace stan
+}  // namespace math
+}  // namespace internal
 #endif
