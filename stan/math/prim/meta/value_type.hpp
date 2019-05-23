@@ -2,6 +2,7 @@
 #define STAN_MATH_PRIM_META_VALUE_TYPE_HPP
 #include <stan/math/prim.hpp>
 #include <stan/math/prim/meta.hpp>
+#include <vector>
 namespace math {
 namespace stan {
 
@@ -48,8 +49,6 @@ struct value_type<Eigen::Matrix<T, R, C> > {
 
 
 
-}
-}
 
 
 
@@ -68,6 +67,6 @@ struct value_type<std::vector<T> > {
   typedef T type;
 };
 
-}
-}
+}  // namespace stan
+}  // namespace math
 #endif
