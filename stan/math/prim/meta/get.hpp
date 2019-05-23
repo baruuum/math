@@ -2,6 +2,7 @@
 #define STAN_MATH_PRIM_META_GET_HPP
 #include <stan/math/prim.hpp>
 #include <stan/math/prim/meta.hpp>
+#include <vector>
 namespace stan {
 
 
@@ -24,7 +25,6 @@ inline T get(const Eigen::Array<T, R, C>& m, size_t n) {
   return m(static_cast<int>(n));
 }
 
-}
 
 
 /**
@@ -39,5 +39,5 @@ inline T get(const std::vector<T>& x, size_t n) {
   return x[n];
 }
 
-}
+}  // namespace stan
 #endif
